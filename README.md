@@ -1,7 +1,5 @@
 # React Fundamentals
 
-#### Folder Structure
-
 - node_modules
   Contains all dependencies required by the app. Main dependencies also listed in package.json
 
@@ -27,17 +25,12 @@
 - README
   The markdown file where you can share more info about the project for example build instructions and summary
 
-- zoom 175%
-
 #### Remove Boilerplate
 
 - remove src folder
 - create src folder
 
-  - create index.js inside src
-
-- toggle sidebar CMD + B
-- shortcuts settings/keyboard shortcuts
+- create index.js inside src
 
 #### First Component
 
@@ -97,6 +90,9 @@ Just restart the server
 
 - CTRL + C (stop the server)
 - "npm start" (start the dev server)
+   or
+- use "npm clear cache"
+- "npm clear cache --force"   
 
 #### Extensions and settings.json
 
