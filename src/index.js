@@ -3,8 +3,8 @@ import  ReactDOM  from "react-dom/client";
 
 function Greeting()
 {
-    return <h3>It's my first component </h3>
-
+    return <p>It's my first component </p>
+    
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
