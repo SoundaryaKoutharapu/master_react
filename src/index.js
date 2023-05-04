@@ -55,7 +55,22 @@ function Greeting()
 }
 */
 
+// Nested Components
+function Introduction()
+{
+    return(
+        <div>
+            <Person/>
+            <Message/>           
+        </div>
+    );
+};
 
+const Person = ()=>  <h1>Hello, I'm Soundarya</h1>;
+const Message = ()=> {
+    return <p>I'm learing react.js</p>
+}
+//
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Greeting></Greeting>);
+root.render(<Introduction/>);
