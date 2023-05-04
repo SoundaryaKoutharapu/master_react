@@ -16,16 +16,16 @@ function Greeting()
 }
 */
 
-
+/*
 function Greeting()
 {
     return (
     <div>
-        <h3>It's is react learning</h3>
+        <h1><b> <i>It's time to learn react</i></b></h1>
     </div>
     )    
 }
-
+*/
 
 /* -- div created using react.createElement() ---
 function Greeting()
@@ -37,6 +37,24 @@ function Greeting()
     );
  };
 */
+
+/*
+function Greeting()
+{
+    return <React.Fragment>
+    <div className="cls">
+        <h1><b> <i>It's time to learn react</i></b></h1>
+        <p>React JSX Components</p>
+    </div>
+    <p>hello world</p>
+    <ul>
+        <li><a href="http://google.com">react class</a></li>
+    </ul>
+   <input type="text" name="n" id="i" />
+    </React.Fragment> 
+}
+*/
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
