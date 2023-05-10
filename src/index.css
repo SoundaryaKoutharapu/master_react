@@ -9,8 +9,8 @@ body
 {
     font-family: cursive;
     font-size: 1rem;
-    background: gray;
-    color: white;
+    background: rgb(246, 233, 233);
+    color: rgb(42, 14, 180);
 
 }
 
@@ -31,6 +31,12 @@ body
       }
 
 }
+
+.book img{
+    max-width: 100%;
+    object-fit:cover;
+}
+
 .book
 {
    background: white;
@@ -39,21 +45,22 @@ body
    text-align: center;
 }
 
-.book h2
+.book h4
 {
     margin-top: 1rem;
     font-size: 1rem;
-    color: rgb(158, 18, 18);
-
+    color: rgb(196, 110, 162);
 }
 
-.book img{
-    width: 100%;
-    object-fit:cover;
-}
-
-.book h2
+.book h1
 {
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: rgb(15, 221, 49);
+}
+
+.book h3{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: rgb(215, 204, 81);
 }
