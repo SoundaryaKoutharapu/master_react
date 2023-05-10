@@ -21,10 +21,20 @@ const Book = ()=>
   </article>
 } 
 
-const Author = () => <h2>Paulo Coelho</h2> ;
+// const Author = () => <h2 style={{color: '#217b00', fontSize:'1rem' }}>Paulo Coelho</h2>;
 
-const Title = () => <h2>The Alchemist</h2>;
+const Author = () => {
+  // JSX - CSS
+    const inlineHeadingStyle = {
+    color: '#617d89',
+    fontSize: '1rem'
+}
+return <h4 style={inlineHeadingStyle}>Paulo Coelho</h4>
+};
 
+
+const Title = () =>  <h1>The Alchemist</h1>;
+                     
 const Image = () => <img src="https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,200_.jpg" alt="Alchemist" />
 
 
