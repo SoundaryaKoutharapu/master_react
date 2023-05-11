@@ -4,19 +4,25 @@ import  ReactDOM  from "react-dom/client";
 import './index.css';
 
 
+const author = 'Paulo Coelho';
+const title = 'The Alchemist';
+const img = 'https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,200_.jpg';
+
 const BookList = () =>
 {
     return <section className="booklist">
-        <Book/>
-        <Book/>
-        <Book/>
+        {/* <Book job = 'developer'/> 
+        <Book title = 'random title' number = {123}/>  */}
+        <Book author={author} img={img} title={title}/>
+        <Book author={author} img={img} title={title}/>
+        <Book author={author} img={img} title={title} />
     </section>
 }
 
-const author = 'Paulo Coelho';
 
-const Book = ()=> 
+const Book = (props) => 
 {
+  console.log(props);
   /* return <article className="book"> 
     <Image/>
     <Title/>   
@@ -25,16 +31,16 @@ const Book = ()=>
   */ 
 
  // JSX - JS
-
- const title = 'The Alchemist';
-
+ 
 return <article className="book">
-<img src="https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,200_.jpg" alt="Alchemist" />
-<h1>{title}</h1>
-<h4>{author}</h4>
-<h3>{400+50}</h3>
-  </article>
-} 
+<img src= {props.img} alt={props.title}/>
+<h1>{props.title}</h1>
+<h4>{props.author}</h4>
+{/* <p>{props.job}</p> 
+<p>{props.number}</p>
+<p>{props.title}</p>  */}
+ </article>
+} ;
 
 
 /* 
