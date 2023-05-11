@@ -5,7 +5,6 @@ import './index.css';
 
 
 // Objects creation 
-
 const firstBook = {
   author: 'Paulo Coelho',
   title: 'The Alchemist',
@@ -13,15 +12,18 @@ const firstBook = {
 };
 
 const secondBook = {
-  author: ' Robin Sharma',
-  title: 'The Monk Who Sold His Ferrari',
-  img:' https://m.media-amazon.com/images/I/410BqHSamiL._SX322_BO1,204,203,200_.jpg' 
+  author: ' Sudha Murty ',
+  title: "Grandma's Bag of Stories",
+  img:' https://m.media-amazon.com/images/I/61yB0UFlM3L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg' 
 };
 
 
-/* const author = 'Paulo Coelho';
+
+/* 
+const author = 'Paulo Coelho';
 const title = 'The Alchemist';
-const img = 'https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,200_.jpg'; */
+const img = 'https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,200_.jpg'; 
+*/
 
 const BookList = () =>
 {
@@ -37,6 +39,7 @@ const BookList = () =>
 
 const Book = (props) => 
 {
+  const {img, author, title} = props;
   console.log(props);
   /* return <article className="book"> 
     <Image/>
@@ -46,11 +49,10 @@ const Book = (props) =>
   */ 
 
  // JSX - JS
- 
 return <article className="book">
-<img src= {props.img} alt={props.title}/>
-<h1>{props.title}</h1>
-<h4>{props.author}</h4>
+<img src= {img} alt={title}/>
+<h1>{title}</h1>
+<h4>{author}</h4>
 {/* <p>{props.job}</p> 
 <p>{props.number}</p>
 <p>{props.title}</p>  */}
