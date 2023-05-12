@@ -30,7 +30,10 @@ const BookList = () =>
     return <section className="booklist">
         {/* <Book job = 'developer'/> 
         <Book title = 'random title' number = {123}/>  */}
-        <Book author={firstBook.author} img={firstBook.img} title={firstBook.title}/>
+        <Book author={firstBook.author} img={firstBook.img} title={firstBook.title}> 
+        {/* Children Prop */}
+        <p> #trending </p>
+        </Book>
         <Book author={secondBook.author} img={secondBook.img} title={secondBook.title}/>
         {/* <Book author={author} img={img} title={title} /> */}
     </section>
@@ -39,7 +42,7 @@ const BookList = () =>
 
 const Book = (props) => 
 {
-  const {img, author, title} = props;
+  const {img, author, title, children} = props;
   console.log(props);
   /* return <article className="book"> 
     <Image/>
@@ -53,12 +56,12 @@ return <article className="book">
 <img src= {img} alt={title}/>
 <h1>{title}</h1>
 <h4>{author}</h4>
+{children}
 {/* <p>{props.job}</p> 
 <p>{props.number}</p>
 <p>{props.title}</p>  */}
  </article>
 } ;
-
 
 /* 
 
