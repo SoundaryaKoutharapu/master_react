@@ -1,7 +1,7 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
-
 import './index.css';
+import Map from "./map";
 
 
 // Objects creation 
@@ -28,6 +28,7 @@ const img = 'https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,
 const BookList = () =>
 {
     return <section className="booklist">
+       
         {/* <Book job = 'developer'/> 
         <Book title = 'random title' number = {123}/>  */}
         <Book author={firstBook.author} img={firstBook.img} title={firstBook.title}> 
@@ -35,7 +36,8 @@ const BookList = () =>
         <p> #trending </p>
         </Book>
         <Book author={secondBook.author} img={secondBook.img} title={secondBook.title}/>
-        {/* <Book author={author} img={img} title={title} /> */}
+        {/* <Book author={author} img={img} title={title} /> */} 
+        <Map/>
     </section>
 }
 
