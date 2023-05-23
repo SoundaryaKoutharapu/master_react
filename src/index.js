@@ -37,9 +37,48 @@ const BookList = () =>
         </Book>
         <Book author={secondBook.author} img={secondBook.img} title={secondBook.title}/>
         {/* <Book author={author} img={img} title={title} /> */} 
-        <Map/>
+         <Map/>
+        <EventListeners/>
     </section>
 }
+
+
+
+//Event Listeners
+const EventListeners = () =>
+{
+    const handleFormInput = (e) =>
+    {
+      console.log(e.target.name);
+      console.log(e.target.value);
+      console.log(e.target);
+      console.log("Handle form Input");
+    };
+
+    const handleButtonClick = () =>
+    {
+      alert("Handle button click");
+    };
+
+    const handleFormSubmission = (e) =>
+    {
+      e.preventDefault();
+      console.log('form submission');
+    };
+
+   return <section>
+    <form onSubmit={handleFormSubmission}>
+      <h2>Typical form</h2>
+      <input type="text" name = 'form' onChange={handleFormInput} style={{borderRadius:'50px'}}/>
+      <div>
+    <button type="submit">submit</button>
+    </div>
+    </form>
+    <button onClick={handleButtonClick} type="button">Click Here</button>
+   </section>
+}
+
+
 
 
 const Book = (props) => 

@@ -28,10 +28,10 @@ const books =
 const Map = () => {
 // return <div>{newNames}</div>
 return <div>
-    {books.map((book) =>{
+    {books.map((book) => {
         console.log(book);
         return <h1>{book.title}</h1>
-
+       
     })}
 </div>
 }
