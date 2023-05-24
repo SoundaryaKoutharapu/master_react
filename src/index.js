@@ -69,12 +69,12 @@ const EventListeners = () =>
    return <section>
     <form onSubmit={handleFormSubmission}>
       <h2>Typical form</h2>
-      <input type="text" name = 'form' onChange={handleFormInput} style={{borderRadius:'50px'}}/>
+      <input type="text" name = 'form' onChange={(e) => console.log(e.target.value)} style={{borderRadius:'50px'}}/>
       <div>
     <button type="submit">submit</button>
     </div>
     </form>
-    <button onClick={handleButtonClick} type="button">Click Here</button>
+    <button onClick={() => console.log('hello world') } type="button">Click Here</button>
    </section>
 }
 
