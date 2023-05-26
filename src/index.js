@@ -27,11 +27,18 @@ const img = 'https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,
 
 const BookList = () =>
 {
+
+  const someValue = 'shake and bake';
+  const displayValue = () => 
+  {
+    console.log("some value");
+  }
+
     return <section className="booklist">
        
         {/* <Book job = 'developer'/> 
         <Book title = 'random title' number = {123}/>  */}
-        <Book author={firstBook.author} img={firstBook.img} title={firstBook.title}> 
+        <Book author={firstBook.author} img={firstBook.img} title={firstBook.title} displayValue={displayValue}> 
         {/* Children Prop */}
         <p> #trending </p>
         </Book>
@@ -39,6 +46,7 @@ const BookList = () =>
         {/* <Book author={author} img={img} title={title} /> */} 
          <Map/>
         <EventListeners/>
+
     </section>
 }
 
@@ -79,11 +87,9 @@ const EventListeners = () =>
 }
 
 
-
-
 const Book = (props) => 
 {
-  const {img, author, title, children} = props;
+  const {img, author, title, children, displayValue} = props;
   console.log(props);
   /* return <article className="book"> 
     <Image/>
@@ -92,10 +98,16 @@ const Book = (props) =>
   </article>
   */ 
 
+const displayTitle = () =>
+{
+  console.log(title);
+}
+
  // JSX - JS
 return <article className="book">
 <img src= {img} alt={title}/>
 <h1>{title}</h1>
+<button onClick={displayValue}>Click me</button>
 <h4>{author}</h4>
 {children}
 {/* <p>{props.job}</p> 
