@@ -25,7 +25,7 @@ const books =
 }); */
 
 
-const Map = () => {
+ const Map = () => {
 // return <div>{newNames}</div>
 return <div>
     {books.map((book) => {
@@ -35,4 +35,5 @@ return <div>
     })}
 </div>
 }
+
 export default Map
