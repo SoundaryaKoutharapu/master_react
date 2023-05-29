@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body
 {
     font-family: cursive;
@@ -44,6 +45,8 @@ body
    border-radius: 10px;
    padding: 2rem;
    text-align: center;
+   position: relative;
+   margin-top: 5rem;
 }
 
 .book h4
@@ -72,3 +75,23 @@ body
     font-size: 1.2rem;
     color:rgb(221, 158, 64);
 }
+
+.number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.3rem;
+    color: white;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 12px;
+    
+}
+
+
+.abs{
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+} 

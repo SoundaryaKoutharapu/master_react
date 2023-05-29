@@ -1,20 +1,34 @@
 // map function
+import { Book } from '.'
+
+import img1 from './images/book_1.jpg'
+import img2 from './images/book_2.jpg'
+import img3 from './images/book_3.jpg'
+
 
 const books = 
 [
 {
-    author: 'Paulo Coelho',
-    title: 'The Alchemist',
-    img:'https://m.media-amazon.com/images/I/41e+TR4xPDL._SX328_BO1,204,203,200_.jpg',
+    author: 'Sudha Murty ',
+    title: "Grandma's Bag of Stories",
+    img: img1,
     id:'1'
 },
 
 {
-    author: ' Sudha Murty ',
-    title: "Grandma's Bag of Stories",
-    img:' https://m.media-amazon.com/images/I/61yB0UFlM3L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg' ,
+    author: ' ',
+    title: "",
+    img:img2 ,
     id:'2'
+},
+
+{
+    author: ' George Orwell',
+    title: "1984",
+    img:img3 ,
+    id:'3'
 }
+
 ]
 
 //const names = ['john','hima', 'susan'];
@@ -28,10 +42,10 @@ const books =
  const Map = () => {
 // return <div>{newNames}</div>
 return <div>
-    {books.map((book) => {
-        console.log(book);
-        return <h1>{book.title}</h1>
-       
+    {books.map((book, index) => {
+       // console.log(book);
+        // return <h1>{book.title}</h1>
+       return <Book {...book} key={book.id} number={index} />
     })}
 </div>
 }
